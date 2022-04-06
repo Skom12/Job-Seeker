@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_home"
+        android:title="Accueil"></item>
+
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_account"
+        android:title="Mon Compte"></item>
+
+    <item
+        android:id="@+id/nav_dc"
+        android:icon="@drawable/ic_disconnect"
+        android:title="Se déconnecter"></item>
+</menu>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/layoutHead2"
+            android:background="@drawable/background2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                app:civ_border_width="2dp"
+                app:civ_border_color="#000000"
+                android:id="@+id/avatarEntIv"
+                android:background="@drawable/ic_add_image"
+                android:layout_centerInParent="true"
+                android:layout_width="150dp"
+                android:layout_height="150dp"/>
+
+
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/layoutHead2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+
+                android:id="@+id/PseudoEntiD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:enabled="true"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="@android:color/black"
+                tools:text="Nom de l'entreprise" />
+
+            <TextView
+                android:id="@+id/EmailEntiD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:drawablePadding="16dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                tools:text="email"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/Adresse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/ic_add_location_black_24dp"
+                android:drawablePadding="16dp"
+                android:ems="10"
+                android:enabled="true"
+                android:hint="Adresse"
+                android:inputType="textPostalAddress"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+
+            <ProgressBar
+                android:id="@+id/progressbar2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/buttonRinit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/round_bg"
+                android:text="Réinsitalliser votre mot de passe"
+                android:textColor="@color/colorPrimary"
+                android:textAllCaps="false"
+                 />
+
+            <Button
+                android:id="@+id/button_save2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/round_bg"
+                android:textColor="@color/colorPrimary"
+                android:text="Sauvegarder les modificatons"
+                android:textAllCaps="false"
+                />
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
+
+

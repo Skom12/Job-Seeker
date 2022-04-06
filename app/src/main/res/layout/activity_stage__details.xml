@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Stage_Details"
+    
+    >
+
+    <TextView
+        android:id="@+id/tvDetailType"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="Type du stage"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/ivDetail"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="300dp"
+        android:layout_below="@id/tvDetailType"
+        app:srcCompat="@drawable/ic_account" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="636dp"
+
+        android:layout_marginTop="90dp">
+
+        <TextView
+            android:id="@+id/tvDetailPar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Proposé par :"></TextView>
+
+        <TextView
+            android:id="@+id/tvDetailDomaine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDetailPar"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Domaine"></TextView>
+
+        <TextView
+            android:id="@+id/tvDetailMail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDetailDomaine"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Adresse mail contact">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tvDetailDuree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDetailMail"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="Date + Durée"></TextView>
+
+        <TextView
+            android:id="@+id/tvDetailDescrip"
+            android:layout_width="331dp"
+            android:layout_height="216dp"
+            android:layout_below="@id/tvDetailDuree"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:inputType="textMultiLine"
+            android:lines="20"
+            android:maxLines="20"
+            android:minLines="1"
+            android:scrollbars="vertical"
+            android:text="Description du Stage"></TextView>
+
+
+        <Button
+            android:id="@+id/btnPostul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDetailDescrip"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/round_bg"
+            android:text="Postuler"
+
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/déjapostul"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vous avez déja postulé pour ce stage"
+            android:layout_below="@+id/btnRetour"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+        <Button
+            android:id="@+id/btnRetour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDetailDescrip"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="50dp"
+            android:background="@drawable/round_bg"
+            android:text="Retour"
+            android:textColor="@color/colorPrimary" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
+

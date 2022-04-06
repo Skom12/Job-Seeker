@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">WorkTeaser</string>
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string-array name="Domain">
+        <item>Qui êtes vous?</item>
+        <item>"Un Etudiant"</item>
+        <item>"Une Entreprise"</item>
+    </string-array><string name="Domaine"></string>
+
+
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+    <string-array name="Type">
+        <item>Veuillez choisir le type du stage</item>
+        <item>"Stage de formation humaine"</item>
+        <item>"Stage d'ingénieur"</item>
+        <item>"Stage de découverte"</item>
+        <item>"Stage d'initiation"</item>
+        <item>"Stage obligatoire"</item>
+        <item>"Stage facultatif"</item>
+        <item>"Projet de fin d'étude"</item>
+
+    </string-array>
+
+
+</resources>

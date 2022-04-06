@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EntFunc2Activity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="720dp">
+            <TextView
+                android:id="@+id/TextViewTop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:text="Veuillez saisir les information correspondantes"
+                android:textSize="18dp">
+
+            </TextView>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/TextViewTop"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/SpinnerType"></Spinner>
+
+            <EditText
+                android:id="@+id/EditTextType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/SpinnerType"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:hint="Domaine du stage">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/EditTextDurée"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditTextType"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:hint="Durée du stage">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/EditTextDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditTextDurée"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Date de début : JJ/MM/AA"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/EditTextDescrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditTextDate"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="40dp"
+                android:hint="Veuillez décrire le stage"
+                android:inputType="textMultiLine"
+                android:lines="8"
+                android:maxLines="10"
+                android:minLines="6"
+                android:scrollbars="vertical" />
+
+            <EditText
+                android:id="@+id/EditTextMailContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/EditTextDescrip"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:ems="10"
+                android:hint="Adresse mail contact"
+                android:inputType="textEmailAddress" />
+
+            <Button
+                android:id="@+id/buttonSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/EditTextMailContact"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="80dp"
+                android:background="@drawable/round_bg"
+                android:text="Enregistrer "
+                android:textColor="@color/colorPrimary" />
+
+            <Button
+                android:id="@+id/btnRetour3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/buttonSubmit"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="80dp"
+                android:layout_marginEnd="80dp"
+                android:background="@drawable/round_bg"
+                android:text="Retour"
+                android:textColor="@color/colorPrimary" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
